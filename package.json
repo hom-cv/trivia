@@ -1,6 +1,6 @@
 {
   "name": "trivia",
-  "homepage": "hom-cv.github.io/trivia",
+  "homepage": "http://hom-cv.github.io/trivia",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
