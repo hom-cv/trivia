@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hom-cv.github.io/trivia/static/css/main.500c924c.css",
+    "main.js": "/hom-cv.github.io/trivia/static/js/main.ba1c3aeb.js",
+    "index.html": "/hom-cv.github.io/trivia/index.html",
+    "main.500c924c.css.map": "/hom-cv.github.io/trivia/static/css/main.500c924c.css.map",
+    "main.ba1c3aeb.js.map": "/hom-cv.github.io/trivia/static/js/main.ba1c3aeb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.500c924c.css",
+    "static/js/main.ba1c3aeb.js"
+  ]
+}
