@@ -1,3 +1,11 @@
 .qe--button-selected {
     background-color: grey;
 }
+
+.qe--button-correct {
+    background-color: green;
+}
+
+.qe--button-wrong {
+    background-color: red;
+}

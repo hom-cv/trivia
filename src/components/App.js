@@ -26,7 +26,7 @@ export default function App() {
     }, [newGame])
 
     useEffect(function() {
-        fetch(`https://opentdb.com/api.php?amount=${quizLength}&type=multiple`)
+        fetch(`https://opentdb.com/api.php?amount=${quizLength}&encode=base64&type=multiple`)
         .then(res => res.json())
         .then(data => updateDb(data.results))
     }, [newGame])
