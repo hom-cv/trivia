@@ -29,7 +29,6 @@ export default function QuestionElement(props) {
         return (
             <button
                 className={props.checking?answerStyle(index):selectingStyle(index)}
-                //className={props.selected === index?"qe--button-selected":"qe--button"}
                 key={nanoid()}
                 id={index}
                 onClick={() => props.onClickSelect(props.id, index)}
@@ -41,9 +40,12 @@ export default function QuestionElement(props) {
     })
     
     return (
-        <div>
+        <div className="qe--container">
             <p>{decode(props.question)}</p>
-            <p>{answersElements}</p>
+            <div className="qe--button-container">
+                {answersElements}
+            </div>
+            <hr className="qe--divider" />
         </div>
     )
 }

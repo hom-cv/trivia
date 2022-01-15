@@ -1,11 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1C1C1C;
+    color: #293264;
+;
+    font-family: "Karla", sans-serif;
+}
+
+.app--container {
+    width: 550px;
+    height: 550px;
+    background: #F5F7FB;
+    padding: 40px 75px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-image: url(./images/blob-blue.png), url(./images/blob-yellow.png);
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+    justify-content: space-around;
+}
+
+.landing--container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 100%;
+}
+
+.landing--title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.landing--desc {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.app--button-again, .app--button-check, .landing--button {
+    background: #4D5B9E;
+    color:white;
+    border: none;
+}
+
+button:active {
+    -webkit-box-shadow: inset 0px 0px 20px #3a3a3a;
+       -moz-box-shadow: inset 0px 0px 20px #3a3a3a;
+            box-shadow: inset 0px 0px 20px #3a3a3a;
+     outline: none;
+  }
+
+.landing--button {
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+}
+
+.app--button-again, .app--button-check {
+    width: 120px;
+    height: 35px;
+    font-size: 10px;
+}
+
+.app--button-check {
+    align-self: center;
+}
+
+.app--check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%
+}
+
+button {
+    font-family: "Inter", sans-serif;
+    border-radius: 15px;
+    background: none;
+}
+
+.qe--container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.qe--divider {
+    border: 1px solid #DBDEF0;
+}
+
+.qe--button-container {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.qe--button, .qe--button-selected, .qe--button-correct, .qe--button-wrong {
+    font-size: 10px;
+    font-family: "Karla", sans-serif;
+}
+
+.qe--button {
+    border: solid 0.3px #293264;
+}
+
 .qe--button-selected {
-    background-color: grey;
+    background: #D6DBF5;
+    border: solid 0.3px #D6DBF5;
 }
 
 .qe--button-correct {
-    background-color: green;
+    background: #94D7A2;
+    border: solid 0.3px #94D7A2;
 }
 
 .qe--button-wrong {
-    background-color: red;
+    background: #F8BCBC;
+    border: solid 0.3px #F8BCBC;
 }

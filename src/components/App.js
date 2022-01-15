@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import QuestionElement from "./QuestionElement"
 import {nanoid} from "nanoid"
+import Landing from "./Landing"
 
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
     const [answers, updateAnswers] = useState([])
     const [checking, updateChecking] = useState(false)
     const [newGame, updateNewGame] = useState(false)
+    const [landing, updateLanding] = useState(true)
 
     const quizLength = 5
     const choices = 4
@@ -69,13 +71,14 @@ export default function App() {
     }
     
     return (
-        <div>
-            {quizElements}
-            {!checking && <button onClick={() => updateChecking(true)}>Check answers</button>}
-            {checking && <div>
+        <main className="app--container">
+            {landing && <Landing updateLanding={updateLanding} />}
+            {!landing && quizElements}
+            {!landing && !checking && <button className="app--button-check" onClick={() => updateChecking(true)}>Check answers</button>}
+            {checking && <div className="app--check">
                 <p>You scored {calculateScore(selected, answers)} / {quizLength} correct answers</p>
-                <button onClick={resetGame}>Play again?</button>
+                <button className="app--button-again" onClick={resetGame}>Play again?</button>
             </div>}
-        </div>
+        </main>
     )
 }
